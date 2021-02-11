@@ -12,6 +12,7 @@ test.each([
     let n = 0;
     result.forEach((char) => {
       expect(char).toEqual(characters[expected[n]]);
+      expect(char).not.toBe(characters[expected[n]]);
       n += 1;
     });
   },
